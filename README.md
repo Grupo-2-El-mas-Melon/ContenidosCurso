@@ -1,7 +1,8 @@
 # ContenidosCurso
 
 > Hemos creado una carpeta en una ramificacion para que cada uno haga sus ejercicios
-> SIEMPRE TRABAJAR DESDE NUESTRA PROPIA RAMA
+> **SIEMPRE TRABAJAR** DESDE NUESTRA PROPIA RAMA => Comprobar con `git branch` y `git checkout RamificacionNombre`
+> TODOS LOS DIAS MIENTRAS HAYA CAMBIOS => `git pull` en la RAMA PRINCIPAL (MAIN) con `git checkout main`
 
 ## ¿Como se ha realizado? Poned estos comandos
 
@@ -16,5 +17,6 @@
 9. `git pull` => Para ver los cambios de los compañeros
 10. `git merge RamificacionNombre`=> Para fusionar los cambios de nuestra rama a la principal (Deberia ser de alguien superior)
 11. `git push` => Siempre que haya cambios o se finalice una actividad
+12. `git rebase main `=> En la rama creada (RamificacionNombre). Esto va a hacer que se actualice con la main (con el resto de cambios)
 
 EN CASO DE QUE HAYA ERROR, VOLVER A EMPEZAR ELIMINANDO TU RAMA => `git branch -D RamificacionNombre`
