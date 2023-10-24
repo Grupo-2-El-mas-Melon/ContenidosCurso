@@ -1,6 +1,7 @@
 # ContenidosCurso
 
 > Hemos creado una carpeta en una ramificacion para que cada uno haga sus ejercicios
+> SIEMPRE TRABAJAR DESDE NUESTRA PROPIA RAMA
 
 ## ¿Como se ha realizado? Poned estos comandos
 
@@ -10,6 +11,10 @@
 4. `git checkout RamificacionNombre`
 5. `git add .`
 6. `git commit -am "Hemos añadido un archivo de prueba"`
-7. `git push origin RamificacionNombre`
+7. `git push origin RamificacionNombre` => Para subir los cambios en nuestro Branch
+8. `git checkout main` => Para volver a la rama principal
+9. `git pull` => Para ver los cambios de los compañeros
+10. `git merge RamificacionNombre`=> Para fusionar los cambios de nuestra rama a la principal (Deberia ser de alguien superior)
+11. `git push` => Siempre que haya cambios o se finalice una actividad
 
 EN CASO DE QUE HAYA ERROR, VOLVER A EMPEZAR ELIMINANDO TU RAMA => `git branch -D RamificacionNombre`
