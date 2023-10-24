@@ -18,5 +18,7 @@
 10. `git merge RamificacionNombre`=> Para fusionar los cambios de nuestra rama a la principal (Deberia ser de alguien superior)
 11. `git push` => Siempre que haya cambios o se finalice una actividad
 12. `git rebase main `=> En la rama creada (RamificacionNombre). Esto va a hacer que se actualice con la main (con el resto de cambios)
-
+13. `git pull` => Para traer los nuevos cambios realizados en el main. HAY QUE ESTAR EN MAIN `git checkout main`
+14. `git checkout RamificacionNombre` => Para volver a nuestra rama. **IMPORTANTE**
+15. `git rebase main` => **EN NUESTRA RAMA**, para sincronizar los datos o archivos nuevos o modificados creados de casa uno.
 EN CASO DE QUE HAYA ERROR, VOLVER A EMPEZAR ELIMINANDO TU RAMA => `git branch -D RamificacionNombre`
