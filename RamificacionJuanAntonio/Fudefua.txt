@@ -1,1 +1,24 @@
-Hola que hase
+Web Services Actividad 1
+Parte 1
+
+CREATE TABLE Editoriales (
+	IdEditorial	INT	NOT NULL IDENTITY	PRIMARY KEY,
+	Nombre NVARCHAR(150) NOT NULL 
+);
+
+CREATE TABLE Autores (
+	IdAutor	INT	NOT NULL IDENTITY	PRIMARY KEY,
+	Nombre NVARCHAR(150) NOT NULL 
+);
+
+CREATE TABLE Libros (
+	ISBN NVARCHAR(13) NOT NULL	PRIMARY KEY,
+	Titulo NVARCHAR(150) NOT NULL,
+	Paginas INT NOT NULL,
+	FotoPortada VARCHAR(MAX) NULL,
+	Descatalogado BIT NOT NULL,
+	AutorId INT NOT NULL,
+	EditorialId INT NOT NULL
+	CONSTRAINT FK_Autores_Libros FOREIGN KEY (AutorId) REFERENCES Autores (IdAutor),
+	CONSTRAINT FK_EditorialId_Libros FOREIGN KEY (EditorialId) REFERENCES Editoriales (IdEditorial)
+);
